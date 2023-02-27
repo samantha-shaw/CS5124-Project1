@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 1: Out of This World</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <!-- Add HTML content, SVG drawing area, ... -->
+    <div class="page-title">Project 1: Out of This World</div>
+    <div class="big-container">
+        <div class="chart-container">
+            <div class="medium-chart-container">
+                <div class="mini-chart-container">
+                    <div class="barchart barchart1">
+                        <h1>Star Count</h1>
+                        
+                        <svg id="barchart">
+                            <text class="barchart-y-axis"># of Exoplanets</text>
+                        </svg>
+
+                        <div id="footer">
+                            <div class="footer-col text-left">
+                                <a href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS" target="_blank" class="btn btn-link btn-sm">Source: exoplanetarchive.ipac.caltech.edu</a>
+                            </div>
+                            <div class="footer-col-x text-right">
+                                # of Stars
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="barchart barchart2">
+                        <h1>Planet Count</h1>
+                        
+                        <svg id="barchart2">
+                            <text class="barchart-y-axis"># of Exoplanets</text>
+                        </svg>
+
+                        <div id="footer">
+                            <div class="footer-col text-left">
+                                <a href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS" target="_blank" class="btn btn-link btn-sm">Source: exoplanetarchive.ipac.caltech.edu</a>
+                            </div>
+                            <div class="footer-col-x text-right">
+                                # of Planets
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mini-chart-container">
+                    <div class="barchart barchart3">
+                        <h1>Star Type Count</h1>
+                        
+                        <svg id="barchart3">
+                            <text class="barchart-y-axis"># of Exoplanets</text>
+                        </svg>
+
+                        <div id="footer">
+                            <div class="footer-col text-left">
+                                <a href="https://en.wikipedia.org/wiki/Stellar_classification" target="_blank" class="btn btn-link btn-sm">Source: Wikipedia.com</a>
+                            </div>
+                            <div class="footer-col-x text-right">
+                                Star Type
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="barchart disc-chart">
+                        <h1>Discovery Method Count</h1>
+                        
+                        <svg id="barchart4">
+                            <text class="barchart-y-axis"># of Exoplanets</text>
+                        </svg>
+
+                        <div id="footer">
+                            <div class="footer-col text-left">
+                                <a href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS" target="_blank" class="btn btn-link btn-sm">Source: exoplanetarchive.ipac.caltech.edu</a>
+                            </div>
+                            <div class="footer-col-x text-right">
+                                Discovery Method
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linechart">
+                <h1>Discoveries Over Time</h1>
+                
+                <svg id="linechart"></svg>
+                
+                <div id="footer">
+                    <div class="footer-col text-left">
+                        <a href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS" target="_blank" class="btn btn-link btn-sm">Source: exoplanetarchive.ipac.caltech.edu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chart-container">
+            
+            <div class="medium-chart-container">
+                <div class="mini-chart-container">
+                    <div class="histogram">
+                        <h1>Distribution of Exoplanets by<br>Their Distance to Earth</h1>
+                        
+                        <svg id="histogram">
+                            <text class="barchart-y-axis"># of Exoplanets</text>
+                        </svg>
+
+                        <div id="footer">
+                            <div class="footer-col text-left">
+                                <a href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS" target="_blank" class="btn btn-link btn-sm">Source: exoplanetarchive.ipac.caltech.edu</a>
+                            </div>
+                            <div class="footer-col-x text-right">
+                                Year
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="dual-barchart">
+                        <h1>Habitable & Inhabitable Zone</h1>
+                        <div class="dual-bc-cont">
+                            <svg id="doublebarchart">
+                                <text class="barchart-y-axis"># of Exoplanets</text>
+                            </svg>
+                            <ul class="legend">
+                                <li class="legend-btn" data-difficulty="Habitable"><span class="legend-symbol"></span> Habitable</li>
+                                <li class="legend-btn" data-difficulty="Inhabitable"><span class="legend-symbol"></span> Inhabitable</li>
+                            </ul>
+                        </div>
+                        
+                        
+                        <div id="footer">
+                            <div class="footer-col text-left">
+                                <a href="https://en.wikipedia.org/wiki/Circumstellar_habitable_zone" target="_blank" class="btn btn-link btn-sm">Source: Wikipedia.com</a>
+                            </div>
+                            <div class="footer-col-x text-right">
+                                Year
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="scatterplot">
+                    <h1>Exoplanets Radius vs. Mass</h1>
+                    
+                    <svg id="scatterplot"></svg>
+                    <div id="footer">
+                        <div class="footer-col text-left">
+                            <a href="http://exoplanet.eu/catalog/" target="_blank" class="btn btn-link btn-sm">Source: exoplanet.eu</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="table" class="table">
+                </div>
+                
+                
+            </div>
+        </div>        
+    </div>
+
+    <div id="tooltip"></div>
+    <div id="pop-up"></div>
+
+    <!-- D3 bundle -->
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Our JS code - INCLUDING the new files-->
+    <script src="js/main.js"></script>
+    <script src="js/linechart.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="js/double_barchart.js"></script>
+    <script src="js/scatterplot.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/table.js"></script>
+    <link href="/node_modules/tabulator-tables/dist/css/tabulator.css" rel="stylesheet">
+    <script type="text/javascript" src="/node_modules/tabulator-tables/dist/js/tabulator.js"></script>
+
+
+</body>
+</html>

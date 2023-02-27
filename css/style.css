@@ -1,0 +1,236 @@
+body {
+  padding: 8px 25px;
+  background: #f8f8f8;
+}
+.page-title {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.big-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.chart-container-1 {
+  display: flex;
+  flex-direction: column;
+}
+.chart-container-2 {
+  display: flex;
+}
+.medium-chart-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.mini-chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+#footer {
+  font-size: 11px;
+  display: flex;
+}
+#footer .footer-col {
+  flex: 1;
+}
+.footer-col-x {
+  font-weight: 500;
+}
+h1 {
+  /*font-family: 'Lora', serif;*/
+  font-size: 1.2rem;
+  min-height: 42px;
+  text-align: center;
+  text-decoration: underline;
+}
+.barchart .bar, .histogram .bar {
+  fill: #776cc4;
+  shape-rendering: crispEdges;
+}
+.barchart .bar:hover, .histogram .bar:hover {
+  fill: #6258a3;
+  transition: fill ease-in-out 200ms;
+}
+.barchart-y-axis {
+  transform: rotate(90deg);
+  font-size: 12px;
+  font-weight: 500;
+}
+.axis text {
+  fill: #666;
+  font-size: 12px;
+}
+
+.axis path {
+  shape-rendering: crispEdges;
+  stroke: #888;
+}
+.scatterplot .y-axis path {
+  display: none;
+}
+.y-axis .domain {
+  stroke: #8693a0;
+}
+.axis line {
+  display: none;
+}
+.btn {
+  font-size: 11px;
+  color: #adadad;
+}
+#sorting:hover, #sorting:focus, #sorting2:hover, #sorting2:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+#sorting img, #sorting2 img {
+  opacity: 0.8;
+}
+#tooltip {
+  position: absolute;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 2px 2px 3px 0px rgb(92 92 92 / 0.5);
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  min-width: max-content;
+}
+.tooltip-label {
+  font-weight: 500;
+  font-size: 10px;
+  color: #888;
+}
+
+.linechart .tooltip circle {
+  fill: none;
+  stroke: #78bd39;
+  stroke-width: 2px;
+  opacity: 100%;
+}
+.linechart .tooltip text {
+  fill: #78bd39;
+  font-weight: 500;
+}
+
+.linechart .chart-area {
+  fill: #e9eff5;
+}
+.linechart .chart-line {
+  fill: none;
+  /*stroke: #517390;*/
+  stroke: #776cc4;
+  stroke-width: 2px;
+}
+
+ /* Tooltip */
+.scatterplot #tooltip {
+  position: absolute;
+  display: none;
+  background: #fff;
+  box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px;
+  min-width: 160px;
+  color: #333;
+}
+.scatterplot .tooltip-title {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+.scatterplot #tooltip ul {
+  margin: 5px 0 0 0;
+  padding-left: 20px;
+}
+
+.barchart4 .svg.tick text {
+  font-size: 8px;
+}
+
+.table {
+  width: max-content;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.table-col {
+  background: #FFF;
+}
+ul {
+  margin-bottom: 0;
+}
+.legend {
+  /*margin: 20px 0;*/
+  list-style: none;
+  padding: 0;
+}
+.legend-btn {
+  /*display: inline-block;*/
+  margin: 0 20px 0 0;
+  /*cursor: pointer;*/
+  transition: all ease-in-out 200ms;
+  font-size: 12px;
+}
+.legend-symbol {
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  display: inline-block;
+}
+.legend-btn[data-difficulty="Habitable"] .legend-symbol {
+  background: #78bd39;
+}
+.legend-btn[data-difficulty="Inhabitable"] .legend-symbol {
+  background: #776cc4;
+}
+.dual-bc-cont {
+  display: flex;
+}
+.pop-up {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  /*z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.pop-up-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  z-index: 2;
+}
+
+.pop-up-title {
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.popup-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.popup-close:hover,
+.popup-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
